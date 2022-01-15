@@ -58,7 +58,6 @@ class HomePage extends StatelessWidget {
                     children: [
                       Flexible(
                           child: Card(
-                        elevation: 2,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(14)),
                         shadowColor: greyColor,
