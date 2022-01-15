@@ -10,6 +10,12 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: Container(
+        width: double.infinity,
+        height: 75,
+        decoration: BoxDecoration(color: blueColor),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       backgroundColor: grayColor,
       body: SafeArea(
         child: ListView(
@@ -186,7 +192,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 15),
+                    const SizedBox(height: 100),
                   ],
                 ))
           ],
