@@ -21,10 +21,12 @@ class RecomendationJob extends StatelessWidget {
     return Flexible(
       flex: 1,
       child: Container(
-        height: 107,
+        height: 110,
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         decoration: BoxDecoration(
-            color: whiteColor, borderRadius: BorderRadius.circular(10)),
+            color: whiteColor,
+            border: Border.all(width: 0.5, color: greyColor),
+            borderRadius: BorderRadius.circular(10)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
