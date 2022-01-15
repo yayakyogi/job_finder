@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:job_finder/themes.dart';
+import 'package:job_finder/widget/bottom_navigation.dart';
 import 'package:job_finder/widget/button_icon.dart';
 import 'package:job_finder/widget/popular_job.dart';
 import 'package:job_finder/widget/recomendation_job.dart';
@@ -10,10 +11,8 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: Container(
-        width: double.infinity,
-        height: 75,
-        decoration: BoxDecoration(color: blueColor),
+      floatingActionButton: const BottomNavigation(
+        pageActive: 'Home',
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       backgroundColor: grayColor,
@@ -129,10 +128,10 @@ class HomePage extends StatelessWidget {
                     isPrimary: true,
                   ),
                   PopularJob(
-                    title: 'Senior Graphic Designer',
+                    title: 'Senior UX UX Designer',
                     salaryMin: 50,
                     salaryMax: 60,
-                    position: 'Dsgn Agency',
+                    position: 'Google LLC',
                     city: 'Jakarta',
                     country: 'Id',
                     isPrimary: false,
